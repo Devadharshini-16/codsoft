@@ -1,0 +1,131 @@
+calc.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  <body>
+  <h1 align="center">Calculator</h1>
+  <div class="container">
+	<fieldset id="container">
+		<form name="calculator">
+			<input id="display" type="text" name="display" readonly>
+
+			<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+			<input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+			<input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+			<input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+			<br>
+			<input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+			<input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+			<input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+			<input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+			<br>
+			<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+			<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+			<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+			<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+			<br>
+			<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+			<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+			<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+			<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+		</form>
+	</fieldset>
+</div>
+  </body>
+</html>
+
+cal.css
+  body {
+    background: linear-gradient(to right, #64b5f6, #3949ab);
+    font-family: 'Tahoma', sans-serif;
+    color: #2196F3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #64b5f6, #3949ab);
+}
+
+#container {
+    width: 250px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #90CAF9;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+}
+
+#display {
+    display: block;
+    margin: 15px auto;
+    height: 50px;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+    font-size: 24px;
+    color: #1565C0;
+    text-align: right;
+    font-weight: 400;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.mathButtons {
+	margin: 2px 2px 6px 2px;
+	color: #FFF;
+	text-shadow: -1px -1px 0px #1565C0;
+	background-color: #1976D2;
+	border: 2px solid #0D47A1;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #0D47A1;
+}
+
+.digits {
+	color: #0D47A1;
+	text-shadow: 1px 1px 0px #FFF;
+	background-color: #BBDEFB;
+	border: 2px solid #64b5f6;
+	border-radius: 8px;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #90CAF9;
+}
+
+.digits:hover,
+.mathButtons:hover,
+#clearButton:hover {
+	background-color: #FFD54F;
+	box-shadow: 0px 0px 2px #FFD54F, inset 0px -20px 1px #FFB300;
+	border: 2px solid #FFB300;
+}
+
+#clearButton {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #FFF;
+    text-shadow: -1px -1px 0px #FFA000;
+    background-color: #FFC107;
+    border: 2px solid #FFA000;
+    box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #FF8F00;
+}
