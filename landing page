@@ -1,0 +1,310 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+<!-- main section -->
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                 <img src="img.png" alt="Logo" class="logo-small">
+                <h2 class="hero_title">Hi, This is</h2>
+                <br><h3>DEVADHARSHINI K</h3>
+                <p class="hero_desc"></p>
+				<a href="path/to/resume.pdf" download class="btn btn-primary">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+	<!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="about.jpg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+				<br>
+				
+                       <h4>Hello, I'm DEVADHARSHINI,currently persuing B.Tech Computer<br> Science and Engineering.
+					   I have a strong foundation in programming languages such as Java, Python, and C++. 
+					   Apart from technical skills,<br> I am also a keen learner and believe in continuous improvement.
+					   I am currently seeking opportunities to apply my skills and contribute to innovative projects in the field of Computer Science and Engineering.</h4>
+
+                       
+                </div>
+            </div>
+    </section>
+	
+   <!-- Skills Section -->
+<section id="skills" class="container mt-3">
+  <h1 class="text-center">Skills</h1>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <h4 class="card-title mt-3">Website Development</h4>
+      <p class="card-text mt-3">Proficient in HTML, CSS, JavaScript and responsive design frameworks.
+      </p> 
+    </li>
+	
+
+    </li>
+    <li class="list-group-item">
+      <h4 class="card-title mt-3">Java</h4>
+      <p class="card-text mt-3">Highly motivated and detail-oriented Fresher Java with a passion for developing efficient and reliable software solutions.
+      </p> 
+    </li>
+    <li class="list-group-item">
+      <h4 class="card-title mt-3">Python</h4>
+      <p class="card-text mt-3"> Developing and maintaining Python applications.
+      </p>
+    </li>
+    <li class="list-group-item">
+      <h4 class="card-title mt-3">DBMS</h4>
+      <p class="card-text mt-3">Good knowledge in database management systems using mySQL database.
+      </p>
+    </li>
+	    <li class="list-group-item">
+      <h4 class="card-title mt-3">C++</h4>
+      <p class="card-text mt-3">dceveloped projects based on c++ programming language
+      </p>
+    </li>
+  </ul>
+</section>
+	<!-- project section-->
+    <section id="project">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz App</h4>
+                            <p class="card-text">Developed a dynamic and user-friendly Quiz Application utilizing front-end technologies. Designed and implemented engaging user interfaces for seamless navigation..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">YouTube Clone</h4>
+                            <p class="card-text">Developed a full-stack YouTube clone to replicate the core functionalities of the popular video-sharing platform. Employed a database (e.g., MongoDB) to store and retrieve multimedia content efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Portfolio Landing Page</h4>
+                            <p class="card-text">Designed and developed a professional and visually appealing portfolio landing page to showcase my skills and projects. Implemented a responsive layout using HTML5 and CSS3.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            </div>
+    </section>
+   <!-- contact section-->
+<section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                
+                <div class="text-center">
+                    <p><b>Name:</b>  Devadharshini K</p>
+                    <p><b>E-mail:</b>  abc@gmail.com</p>
+					<p><b>Address:</b>  No:15,West Street,Puducherry</p>
+					<p><b>Phone No:</b>  0123456789</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+                    <input type="email" class="form-control mt-3" placeholder="Your Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+
+style.css
+.logo-small {
+    width: 150px;
+}
+
+.hero-text {
+    padding-top: 50px; 
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+.navbar {
+    background-color: #333; 
+}
+
+
+.navbar-nav .nav-link {
+    color: #fff; 
+}
+
+ 
+.navbar-nav .nav-link:hover {
+    color: #ffc107;  
+}
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8);  
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; 
+}
+.navbar.navbarScroll {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand {
+    color: #fff;  
+    font-size: 1.5rem;  
+}
+
+.navbar-brand:hover {
+    color: #ffc107;  
+}
+
+ 
+.bgimage {
+    height:100vh;
+    background: url('banner.jpg');
+    background-size:cover;
+    position:relative;
+}
+ 
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+ 
+#about, #skills, #project, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+ 
+.imageAboutPage {
+    width: 100%;
+}
+#about h1 {
+    font-size: 3rem;
+    color: #333; 
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #555;  
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #777;  
+}
+#about .container {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#about .row {
+    margin-top: 2rem;
+}
+
+#about .col-lg-4 {
+    margin-bottom: 2rem;
+}
+#about img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    #about .container {
+        padding: 1rem;
+    }
+}
+
+
